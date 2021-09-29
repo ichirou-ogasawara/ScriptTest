@@ -6,7 +6,7 @@ public class Boss
 {
     private int hp = 100; 
     private int power = 25;
-    private int mp = 53;
+    public int mp = 53;
 
     public void Attack()
     {
@@ -58,7 +58,7 @@ public class Test : MonoBehaviour
         lastboss.Attack();
         lastboss.Defence(39);
         // ここから発展課題の関数呼び出し
-        for (int i = 53; i >= 0; i -= 5)
+        for (int i = lastboss.mp; i >= 0; i -= 5)
         {
             lastboss.Magic(5);
         }
